@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ThriveNow Telneting || Courses Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="custom-menu">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle Menu</span>
+                </button>
+            </div>
+            <div class="p-4 pt-5">
+                <h1><a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="logo">
+                    </a></h1>
+                <ul class="list-unstyled components mb-5">
+                    <li class="d-flex align-items-center">
+                        <object class="icon" data="images/home.svg" type="image/svg+xml"></object>
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="mobileDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <object class="icon" data="images/mobile.svg" type="image/svg+xml"></object>
+                            Mobile utilities
+                            <i class="fas fa-chevron-down ms-2"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="mobileDropdown">
+                            <a class="dropdown-item d-flex align-items-center" href="airtime.html">
+                                <object class="icon" data="images/call.svg" type="image/svg+xml"></object>
+                                Airtime top-up
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="data.html">
+                                <object class="icon" data="images/wifi-square.svg" type="image/svg+xml"></object>
+                                Data top-up
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="recharge.html">
+                                <object class="icon" data="images/hashtag.svg" type="image/svg+xml"></object>
+                                Recharge PIN
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="homeDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <object class="icon" data="images/electricity.svg" type="image/svg+xml"></object>
+                            Home utilities <i class="fas fa-chevron-down ms-2"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <a class="dropdown-item d-flex align-items-center" href="cable.html">
+                                <object class="icon" data="images/monitor-mobbile.svg" type="image/svg+xml"></object>
+                                Cable TV
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="electricity.html">
+                                <object class="icon" data="images/flash.svg" type="image/svg+xml"></object>
+                                Electricity Bills
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="educationDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <object class="icon" data="images/teacher.svg" type="image/svg+xml"></object>
+                            Education utilities <i class="fas fa-chevron-down ms-2"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="educationDropdown">
+                            <a class="dropdown-item d-flex align-items-center" href="result.html">
+                                <object class="icon" data="images/award.svg" type="image/svg+xml"></object>
+                                Result Checker
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link d-flex align-items-center" href="courses.html">
+                            <object class="icon" data="images/video-octagon.svg" type="image/svg+xml"></object>
+                            Courses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="account.html">
+                            <object class="icon" data="images/profile-circle.svg" type="image/svg+xml"></object>
+                            My Account
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="mb-5">
+                    <img src="images/customer.png" alt="customer">
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="top-alert">
+                <div class="d-flex">
+                    <span class="time">7:30 AM</span>
+                    <marquee behavior="scroll" direction="left">Welcome Back! ✨ You can now MAKE MORE MONEY using
+                        Telneting. Refer a friend
+                        now and earn 100 Telcoin. Click on the
+                        account icon, go to Refer and Earn , copy your referral link and share it with family and
+                        friends.</marquee>
+                </div>
+            </div>
+
+            <div class="course-section">
+                <h1 class="title">Welcome Back, Emmanuel 👋</h1>
+
+                <nav class="mt-3">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Home
+                        </button>
+
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">In Progress
+                        </button>
+
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Completed
+                        </button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                        tabindex="0">
+
+                        <div class="mt-2 featured">
+                            <h2 class="title">Featured lessons</h2>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="course-card">
+                                        <img src="images/flag.png" alt="flag">
+                                        <h2 class="course-title">Sales</h2>
+
+                                        <div class="d-flex justify-content-between align-items-center details">
+                                            <p>12 Lessons</p>
+                                            <p>|</p>
+                                            <p>10 Hours</p>
+                                        </div>
+                                        
+                                        <a href="course-page.html" class="btn btn-primary w-100 d-flex align-items-center justify-content-center">
+                                            <img src="images/video-circle-white.png" alt="video icon" class="me-2 d-inline-block">
+                                            Continue
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="course-card">
+                                        <img src="images/arrow.png" alt="arrow">
+                                        <h2 class="course-title">Operations</h2>
+                                    
+                                        <div class="d-flex justify-content-between align-items-center details">
+                                            <p>12 Lessons</p>
+                                            <p>|</p>
+                                            <p>10 Hours</p>
+                                        </div>
+                                    
+                                        <button class="btn opaque-btn w-100 d-flex align-items-center justify-content-center">
+                                            <img src="images/video-circle.png" alt="video icon" class="me-2 d-inline-block">
+                                            Continue
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="course-card">
+                                        <img src="images/speaker-circle.png" alt="speaker-circle">
+                                        <h2 class="course-title">Marketing</h2>
+                                    
+                                        <div class="d-flex justify-content-between align-items-center details">
+                                            <p>12 Lessons</p>
+                                            <p>|</p>
+                                            <p>10 Hours</p>
+                                        </div>
+                                    
+                                        <button class="btn opaque-btn w-100 d-flex align-items-center justify-content-center">
+                                            <img src="images/video-circle.png" alt="video icon" class="me-2 d-inline-block">
+                                            Continue
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="course-card">
+                                        <img src="images/bricks.png" alt="bricks">
+                                        <h2 class="course-title">Finance</h2>
+                                    
+                                        <div class="d-flex justify-content-between align-items-center details">
+                                            <p>12 Lessons</p>
+                                            <p>|</p>
+                                            <p>10 Hours</p>
+                                        </div>
+                                    
+                                        <button class="btn opaque-btn w-100 d-flex align-items-center justify-content-center">
+                                            <img src="images/video-circle.png" alt="video icon" class="me-2 d-inline-block">
+                                            Continue
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                        tabindex="0">
+                        
+                        <div class="course-progress">
+                            <div class="card">
+                                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                    <div class="d-flex align-items-start">
+                                        <img src="images/flag-box.png" alt="flag" class="me-3">
+                                        <div>
+                                            <span>4 of 12 completed | 5h 10m left</span>
+                                            <h2>Sales</h2>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-primary d-flex align-items-center justify-content-center course-btn">
+                                        <img src="images/video-circle-white.png" alt="video icon" class="me-2 d-inline-block">
+                                        Continue
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                        tabindex="0">
+                        
+                        <div class="course-completed">
+                            <div class="card">
+                                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                    <div class="d-flex align-items-start">
+                                        <img src="images/flag-box.png" alt="flag" class="me-3">
+                                        <div>
+                                            <span>Completed | 1 of 4</span>
+                                            <h2>Sales</h2>
+                                            <p class="m-0 main-remark"> <img src="images/tick-circle.png" alt="check" class="me-1 img-transform"> Great Work! You have completed this lesson,
+                                                you’re one step closer to start your own business</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="remark">
+                                        <h5>Remark</h5>
+                                        <p><img src="images/tick-circle.png" alt="check" class="me-1 img-transform"> Great Work! You have completed this lesson,
+                                        you’re one step closer to start your own business</p>
+                                    </div>
+                        
+                                    <button class="btn btn-primary d-flex align-items-center justify-content-center course-btn">
+                                        View Certificate
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right-sidebar d-none d-md-block" id="right-sidebar-content">
+            <div class="top">
+                <div class="d-flex align-items-center justify-content-around">
+                    <img src="images/notification.png" alt="notification">
+                    <div class="d-flex align-items-center">
+                        <span class="icon">
+                            E
+                        </span>
+                        <div class="dropdown">
+                            <button type="button" class="name" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Emmanuel</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu shadow-box">
+                                <li><a class="dropdown-item" href="#">My Account</a></li>
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                <hr class="my-2">
+                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-progress">
+                <h1 class="title">Progress</h1>
+
+                <div class="card mb-2" style="background: linear-gradient(to right, #D7BAFF 36%, #F3F6FA 36%);">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <img src="images/flag.png" alt="flag" class="me-2">
+                            <div>
+                                <h5>Sales</h5>
+                                <p class="m-0">4 of 12</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p>36%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-2">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <img src="images/speaker-circle.png" alt="speaker-circle" class="me-2">
+                            <div>
+                                <h5>Marketing</h5>
+                                <p class="m-0">4 of 12</p>
+                            </div>
+                        </div>
+                
+                        <div>
+                            <p>0%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-2">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <img src="images/bricks.png" alt="bricks" class="me-2">
+                            <div>
+                                <h5>Finance</h5>
+                                <p class="m-0">4 of 12</p>
+                            </div>
+                        </div>
+                
+                        <div>
+                            <p>0%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-2">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <img src="images/arrow.png" alt="arrow" class="me-2">
+                            <div>
+                                <h5>Operations</h5>
+                                <p class="m-0">4 of 12</p>
+                            </div>
+                        </div>
+                
+                        <div>
+                            <p>0%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/main.js"></script>
+    <script>
+        // Dropdown
+
+            // Get all dropdown links
+            const dropdownLinks = document.querySelectorAll('.nav-item.dropdown');
+
+            // Add a click event listener to each dropdown link
+            dropdownLinks.forEach((link) => {
+                link.addEventListener('click', function () {
+                    // Toggle the visibility of the associated dropdown menu
+                    const dropdownMenu = this.querySelector('.dropdown-menu');
+                    if (dropdownMenu.style.display === 'flex') {
+                        dropdownMenu.style.display = 'none';
+                    } else {
+                        dropdownMenu.style.display = 'flex';
+                    }
+                });
+            });
+
+            
+        const rightToggle = document.getElementById('right-bar');
+        const rightBar = document.getElementById('right-sidebar-content')
+
+        rightToggle.addEventListener('click', function () {
+            rightBar.classList.toggle('hide')
+        })
+    </script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+
+</html>

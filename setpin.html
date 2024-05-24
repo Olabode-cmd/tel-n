@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Pin || Telneting ThriveNow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <div class="auth-wrapper form">
+        <div class="logo">
+            <img src="images/thrivenow/logo.png" alt="logo" class="absolute-logo">
+        </div>
+
+        <div class="container">
+            <div class="form-box auth">
+                <img src="images/thrivenow/lock.png" alt="lock">
+                <h1 class="title">Create Transaction Pin</h1>
+                <p>Create a four digit pin for all your <br /> transactions on Telneting.</p>
+
+                <form action="#">
+                    <div class="number-input">
+                        <input type="text" maxlength="1" id="box1">
+                        <input type="text" maxlength="1" id="box2">
+                        <input type="text" maxlength="1" id="box3">
+                        <input type="text" maxlength="1" id="box4">
+                    </div>
+
+                    <input type="submit" value="Continue" class="btn btn-primary w-75 py-3">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script>
+        const inputBoxes = document.querySelectorAll('.number-input input');
+
+        inputBoxes.forEach((box, index) => {
+            box.addEventListener('input', (e) => {
+                if (e.target.value.length > 1) {
+                    e.target.value = e.target.value.slice(0, 1);
+                }
+
+                if (index < inputBoxes.length - 1 && e.target.value !== '') {
+                    inputBoxes[index + 1].focus();
+                }
+            });
+
+            box.addEventListener('keydown', (e) => {
+                if (e.key === 'Backspace' && e.target.value === '' && index > 0) {
+                    inputBoxes[index - 1].focus();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

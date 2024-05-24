@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ThriveNow Telneting || Referral Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="custom-menu">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle Menu</span>
+                </button>
+            </div>
+            <div class="p-4 pt-5">
+                <h1><a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="logo">
+                    </a></h1>
+                <ul class="list-unstyled components mb-5">
+                    <li class="nav-item d-flex align-items-center">
+                        <object class="icon" data="images/home.svg" type="image/svg+xml" style="fill: grey"></object>
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="mobileDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <object class="icon" data="images/mobile.svg" type="image/svg+xml"></object>
+                            Mobile utilities
+                            <i class="fas fa-chevron-down ms-2"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="mobileDropdown">
+                            <a class="dropdown-item d-flex align-items-center" href="airtime.html">
+                                <object class="icon" data="images/call.svg" type="image/svg+xml"></object>
+                                Airtime top-up
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="data.html">
+                                <object class="icon" data="images/wifi-square.svg" type="image/svg+xml"></object>
+                                Data top-up
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="recharge.html">
+                                <object class="icon" data="images/hashtag.svg" type="image/svg+xml"></object>
+                                Recharge PIN
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="homeDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <object class="icon" data="images/electricity.svg" type="image/svg+xml"></object>
+                            Home utilities <i class="fas fa-chevron-down ms-2"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <a class="dropdown-item d-flex align-items-center" href="cable.html">
+                                <object class="icon" data="images/monitor-mobbile.svg" type="image/svg+xml"></object>
+                                Cable TV
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="electricity.html">
+                                <object class="icon" data="images/flash.svg" type="image/svg+xml"></object>
+                                Electricity Bills
+                            </a>
+                        </div>
+                    </li>
+                    <li class="active nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="educationDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <object class="icon" data="images/teacher.svg" type="image/svg+xml"></object>
+                            Education utilities <i class="fas fa-chevron-down ms-2"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="educationDropdown">
+                            <a class="dropdown-item d-flex align-items-center" href="result.html">
+                                <object class="icon" data="images/award.svg" type="image/svg+xml"></object>
+                                Result Checker
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="courses.html">
+                            <object class="icon" data="images/video-octagon.svg" type="image/svg+xml"></object>
+                            Courses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="account.html">
+                            <object class="icon" data="images/profile-circle.svg" type="image/svg+xml"></object>
+                            My Account
+                        </a>
+                    </li>
+                </ul>
+    
+                <div class="mb-5">
+                    <img src="images/customer.png" alt="customer">
+                </div>
+    
+            </div>
+        </nav>
+    
+        <!-- Page Content -->
+        <div id="content">
+            <div class="telcard">
+                <p class="title">Telcoin bonus balance</p>
+                <div class="d-flex align-items-end">
+                    <h1>322</h1>
+                    <p>TLC</p>
+                </div>
+            </div>
+
+            <div class="width-75 mt-4">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h6>Total Telcoin earned</h6>
+                    <h6>692 TLC</h6>
+                </div>
+
+                <hr>
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <h6>Used Telcoin</h6>
+                    <h6>342 TLC</h6>
+                </div>
+
+                <hr>
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <h6>Available Telcoin</h6>
+                    <h6>342 TLC</h6>
+                </div>
+                
+                <hr>
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <h6>Total referrals</h6>
+                    <h6>19</h6>
+                </div>
+                
+                <hr>
+
+                <div class="d-flex justify-content-between">
+                    <h6>Referrals that performed a <br /> transaction</h6>
+                    <h6>9</h6>
+                </div>
+                
+                <hr>
+            </div>
+
+            <div class="mt-4">
+                <div class="telcard">
+                    <p class="title">SHARE</p>
+                    <hr>
+                    <p class="title mt-3">Link</p>
+
+                    <span class="py-2 px-1" style="border: 1px solid #969696; border-radius: 8px;"
+                        id="copy-link">https:/telneting.com/regist</span>
+                    <button class="opaque-btn py-2" type="button" id="copy-button">Copy</button>
+
+                    <div class="w-50 mt-4 d-flex align-items-center justify-content-between">
+                        <img src="images/whatsapp.png" alt="whatsapp">
+                        <img src="images/twitter.png" alt="twitter">
+                        <img src="images/facebook.png" alt="facebook">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="right-sidebar wider d-none d-md-block">
+            <div class="top">
+                <div class="d-flex align-items-center justify-content-around">
+                    <img src="images/notification.png" alt="notification">
+                    <div class="d-flex align-items-center">
+                        <span class="icon">
+                            E
+                        </span>
+                        <div class="dropdown">
+                            <button type="button" class="name" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Emmanuel</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu shadow-box">
+                                <li><a class="dropdown-item" href="#">My Account</a></li>
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                <hr class="my-2">
+                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="faq px-4">
+                <h3 class="title mt-4">FAQs</h3>
+                <hr>
+
+                <div class="section-faq">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button ps-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    What is Telcoin?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Telcoin is a money-like asset that is primarily managed, stored or exchanged on Telneting. You are rewarded each time
+                                your friends sign up with your referral code.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button ps-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    How many Telcoins do I get per referral?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">For each referral, you enjoy a token of #5</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button ps-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    How do I use my Telcoin?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">You can use your Telcoin to pay for any utility purchased provided you have enough
+                                coins in your Telcoin wallet.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button ps-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    When does my Telcoin expire?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">The good part is your Telcoin has no expiry date.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button ps-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    How can I get more Telcoin?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">The more you refer your family and friends with your referral code, the more Telcoin you
+                                earn.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button ps-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                    Can I sell my Telcoin?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">No, you can’t sell your Telcoin, it is for your personal use.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Dropdown
+
+            // Get all dropdown links
+            const dropdownLinks = document.querySelectorAll('.nav-item.dropdown');
+
+            // Add a click event listener to each dropdown link
+            dropdownLinks.forEach((link) => {
+                link.addEventListener('click', function () {
+                    // Toggle the visibility of the associated dropdown menu
+                    const dropdownMenu = this.querySelector('.dropdown-menu');
+                    if (dropdownMenu.style.display === 'flex') {
+                        dropdownMenu.style.display = 'none';
+                    } else {
+                        dropdownMenu.style.display = 'flex';
+                    }
+                });
+            });
+    </script>
+</body>
+</html>
